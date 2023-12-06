@@ -104,54 +104,65 @@ class _SongBookScreenState extends State<SongBookScreen> {
               //itemCount: filteredItems.length,
               itemCount: songs.length,
               itemBuilder: (context, index) {
-                return ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: const Color.fromARGB(255, 54, 1, 63),
-                      child: Text(
-                        '${index + 1}',
-                        style: const TextStyle(color: Colors.white),
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ShowDetails(index: index)));
+                  },
+                  child: ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: const Color.fromARGB(255, 54, 1, 63),
+                        child: Text(
+                          '${index + 1}',
+                          style: const TextStyle(color: Colors.white),
+                        ),
                       ),
-                    ),
-                    title: InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    ShowDetails(index: index)));
-                      },
-                      child: Text(
-                        //filteredItems[index],
-                        songs[index].name,
+                      title: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      ShowDetails(index: index)));
+                        },
+                        child: Text(
+                          //filteredItems[index],
+                          songs[index].name,
+                          style: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 20,
+                              fontFamily: 'ponnala'),
+                        ),
+                      ),
+                      subtitle: Text(
+                        songs[index].albumname,
                         style: const TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
-                            fontSize: 20,
-                            fontFamily: 'ponnala'),
+                          color: Color.fromARGB(255, 139, 110, 110),
+                        ),
                       ),
-                    ),
-                    subtitle: Text(
-                      songs[index].albumname,
-                      style: const TextStyle(
-                        color: Color.fromARGB(255, 139, 110, 110),
+                      trailing: IconButton(
+                        icon: Icon(
+                          Icons.volume_up,
+                          color: Color.fromARGB(255, 54, 1, 63),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      Mo3SongShowDetails(index: index)));
+                        },
+                      )
+                      // onTap: () {
+                      //   Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //           builder: (context) => ShowDetails(index: index)));
+                      // },
                       ),
-                    ),
-                    trailing: IconButton(
-                      icon: Icon(Icons.mic),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    Mo3SongShowDetails(index: index)));
-                      },
-                    )
-                    // onTap: () {
-                    //   Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //           builder: (context) => ShowDetails(index: index)));
-                    // },
-                    );
+                );
               },
               separatorBuilder: (context, index) {
                 return const Divider(

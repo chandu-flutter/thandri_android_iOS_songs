@@ -2,10 +2,10 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
-import 'package:thandri_sannidhi/mp3_songs/audio_playlist.dart';
 import 'package:thandri_sannidhi/contact.dart';
 import 'package:thandri_sannidhi/downloaad.dart';
 import 'package:thandri_sannidhi/new.dart';
+import 'package:thandri_sannidhi/online_magazine.dart';
 import 'package:thandri_sannidhi/prayer_request.dart';
 import 'package:thandri_sannidhi/song_lyrics/songbook.dart';
 import 'package:thandri_sannidhi/website.dart';
@@ -216,15 +216,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return const AudioPlaylist();
+                          return const OnlineMagazineScreen();
                         },
                       ),
                     );
                   },
                   child: Linked(
-                    icon: Icons.audiotrack,
-                    label1: "mp3",
-                    label2: "Songs",
+                    icon: Icons.menu_book,
+                    label1: "Online",
+                    label2: "Magazine",
                   ),
                 ),
               ],

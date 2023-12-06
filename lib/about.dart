@@ -7,7 +7,7 @@ class AboutScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(''),
-        backgroundColor: Color.fromARGB(255, 104, 10, 121),
+        backgroundColor: const Color.fromARGB(255, 54, 1, 63),
         foregroundColor: Colors.white,
       ),
       body: Container(
@@ -15,8 +15,8 @@ class AboutScreen extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-          Color.fromARGB(255, 104, 10, 121),
-          Color.fromARGB(255, 104, 10, 121),
+          const Color.fromARGB(255, 54, 1, 63),
+          const Color.fromARGB(255, 54, 1, 63),
         ])),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
