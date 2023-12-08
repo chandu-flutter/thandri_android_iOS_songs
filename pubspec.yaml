@@ -50,6 +50,7 @@ dependencies:
   audioplayers: ^5.2.0 
   animate_do: ^3.1.2
   styled_text: ^8.1.0
+  image_picker: ^1.0.4
 
   
  
@@ -100,9 +101,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: ponnala
+    - family: Sree
       fonts:
-        - asset: fonts/ponnala.ttf
+        - asset: fonts/Sree.ttf
     # - family: potti
     #   fonts:
     #     - asset: fonts/PottiSreeramulu.otf        

@@ -42,7 +42,7 @@ class _ShowDetailsState extends State<ShowDetails> {
                   songs[widget.index].details,
                   style: const TextStyle(
                     fontSize: 20,
-                    fontFamily: 'ponnala',
+                    fontFamily: 'Sree',
                   ),
                   textScaleFactor: _scaleFactor,
                 ),

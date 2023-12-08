@@ -133,7 +133,7 @@ class _SongBookScreenState extends State<SongBookScreen> {
                           style: const TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 20,
-                              fontFamily: 'ponnala'),
+                              fontFamily: 'Sree'),
                         ),
                       ),
                       subtitle: Text(
