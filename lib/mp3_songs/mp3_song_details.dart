@@ -62,15 +62,13 @@ class _Mo3SongShowDetailsState extends State<Mo3SongShowDetails> {
               children: <Widget>[
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
-                  child: Image.network(
-                    'https://chirip.in/net/shalem.jpg',
-                    width: double.infinity,
-                    height: 350,
-                    fit: BoxFit.cover,
+                  child: Image.asset(
+                    'images/songs.jpg',
+                    width: 300,
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Text(
                   mp3songs[widget.index].name,
@@ -90,7 +88,7 @@ class _Mo3SongShowDetailsState extends State<Mo3SongShowDetails> {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 Slider(
                     value: position.inSeconds.toDouble(),
@@ -108,7 +106,7 @@ class _Mo3SongShowDetailsState extends State<Mo3SongShowDetails> {
                       await audioPlayer.resume();
                     }),
                 const SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 Container(
                   height: 100,

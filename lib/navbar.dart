@@ -58,27 +58,27 @@ class NavBar extends StatelessWidget {
               );
             },
           ),
-          ListTile(
-            leading: const Icon(
-              Icons.money,
-              size: 20,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            title: const Text(
-              "Offering",
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
-            // onTap: () {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //       builder: (context) {
-            //         return PolicyScreen();
-            //       },
-            //     ),
-            //   );
-            // },
-          ),
+          // ListTile(
+          //   leading: const Icon(
+          //     Icons.money,
+          //     size: 20,
+          //     color: Color.fromARGB(255, 255, 255, 255),
+          //   ),
+          //   title: const Text(
+          //     "Offering",
+          //     style: TextStyle(color: Colors.white, fontSize: 16),
+          //   ),
+          //   // onTap: () {
+          //   //   Navigator.push(
+          //   //     context,
+          //   //     MaterialPageRoute(
+          //   //       builder: (context) {
+          //   //         return PolicyScreen();
+          //   //       },
+          //   //     ),
+          //   //   );
+          //   // },
+          // ),
           ListTile(
             leading: const Icon(
               Icons.policy,
@@ -98,27 +98,6 @@ class NavBar extends StatelessWidget {
                   },
                 ),
               );
-            },
-          ),
-          ListTile(
-            leading: const Icon(
-              Icons.control_point_duplicate,
-              size: 20,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            title: const Text(
-              "Terms & conditions ",
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (context) {
-              //       return const ContactScreen();
-              //     },
-              //   ),
-              // );
             },
           ),
           ListTile(
