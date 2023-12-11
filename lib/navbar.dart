@@ -3,6 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:thandri_sannidhi/about.dart';
 import 'package:thandri_sannidhi/policy.dart';
 import 'package:thandri_sannidhi/testimony.dart';
+import 'package:thandri_sannidhi/website.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavBar extends StatelessWidget {
@@ -39,12 +40,12 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(
-              Icons.accessibility_new,
+              Icons.church,
               size: 20,
               color: Color.fromARGB(255, 255, 255, 255),
             ),
             title: const Text(
-              "Your Testimony",
+              "About Us ",
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             onTap: () {
@@ -52,7 +53,28 @@ class NavBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const TestimonyScreen();
+                    return AboutScreen();
+                  },
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.public,
+              size: 20,
+              color: Color.fromARGB(255, 255, 255, 255),
+            ),
+            title: const Text(
+              "Website",
+              style: TextStyle(color: Colors.white, fontSize: 16),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const Website();
                   },
                 ),
               );
@@ -100,27 +122,7 @@ class NavBar extends StatelessWidget {
               );
             },
           ),
-          ListTile(
-            leading: const Icon(
-              Icons.church,
-              size: 20,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            title: const Text(
-              "About Us ",
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return AboutScreen();
-                  },
-                ),
-              );
-            },
-          ),
+
           Lottie.asset("animations/sw_le.json"),
         ],
       ),

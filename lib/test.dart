@@ -8,14 +8,14 @@ import 'package:image_picker/image_picker.dart';
 
 import 'package:thandri_sannidhi/testimonyReceived.dart';
 
-class TestimonyScreen extends StatefulWidget {
-  const TestimonyScreen({super.key});
+class TestScreen extends StatefulWidget {
+  const TestScreen({super.key});
 
   @override
-  State<TestimonyScreen> createState() => _TestimonyScreenState();
+  State<TestScreen> createState() => _TestScreenState();
 }
 
-class _TestimonyScreenState extends State<TestimonyScreen> {
+class _TestScreenState extends State<TestScreen> {
   //CollectionReference users = FirebaseFirestore.instance.collection("users");
   final _formKey = GlobalKey<FormState>();
   final nameController = TextEditingController();

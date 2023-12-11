@@ -8,6 +8,7 @@ import 'package:thandri_sannidhi/new.dart';
 import 'package:thandri_sannidhi/online_magazine.dart';
 import 'package:thandri_sannidhi/prayer_request.dart';
 import 'package:thandri_sannidhi/song_lyrics/songbook.dart';
+import 'package:thandri_sannidhi/testimony.dart';
 import 'package:thandri_sannidhi/website.dart';
 
 import 'live.dart';
@@ -241,15 +242,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return const Website();
+                          return const TestimonyScreen();
                         },
                       ),
                     );
                   },
                   child: Linked(
-                    icon: Icons.public,
+                    icon: Icons.accessibility_new,
                     label1: "",
-                    label2: "Website",
+                    label2: "Testimony",
                   ),
                 ),
                 InkWell(

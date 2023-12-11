@@ -3,17 +3,12 @@ import 'package:lottie/lottie.dart';
 import 'package:thandri_sannidhi/home.dart';
 
 class TestimonyReceivedScreen extends StatelessWidget {
-  final String name;
-  TestimonyReceivedScreen({
-    required this.name,
-  });
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.white,
-        title: Text("Thank you $name"),
+        title: Text("Thank you"),
         backgroundColor: Color.fromARGB(255, 97, 3, 114),
         centerTitle: true,
         elevation: 40,
@@ -47,7 +42,7 @@ class TestimonyReceivedScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "To God be the Glory  $name",
+                  "To God be the Glory ",
                   style: TextStyle(
                     fontSize: 22,
                     color: Colors.white,
