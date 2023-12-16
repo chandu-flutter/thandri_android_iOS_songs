@@ -13,7 +13,7 @@ List mp3songs = [
   Mp3Songs("వెండి బంగారములు", "సత్య స్వరూపుడా నా యేసయ్య",
       'https://thandrisannidhiministries.org/wp-content/uploads/2023/12/4-VENDI-BANGARALU.mp3'),
   Mp3Songs("రాజువైన నా దేవా", "సత్య స్వరూపుడా నా యేసయ్య",
-      'https://thandrisannidhiministries.org/wp-content/uploads/2023/12/2-ADHIGO-PRIYUNI-KEKA-WAV.mp3'),
+      'https://thandrisannidhiministries.org/wp-content/uploads/2023/12/5-RAJUVINA-NA-DEVA-WAV.mp3'),
   Mp3Songs("యేసు రక్తమే", "సత్య స్వరూపుడా నా యేసయ్య",
       'https://thandrisannidhiministries.org/wp-content/uploads/2023/12/6-yesu-rakthame-song.mp3'),
   Mp3Songs("ప్రేమకే స్వాగతం", "సత్య స్వరూపుడా నా యేసయ్య",
